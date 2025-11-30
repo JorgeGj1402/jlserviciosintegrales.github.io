@@ -1,137 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JL Servicios Integrales</title>
-  <link rel="icon" type="image/png" href="logo.png" />
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #222;
-    }
-    header {
-      background: #000;
-      padding: 20px;
-      color: gold;
-      text-align: center;
-      font-size: 28px;
-      font-weight: bold;
-      letter-spacing: 2px;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 15px;
-      background: #111;
-    }
-    nav a {
-      color: gold;
-      text-decoration: none;
-      font-size: 18px;
-      padding: 8px 15px;
-      border: 1px solid gold;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-    nav a:hover {
-      background: gold;
-      color: #111;
-    }
-    .hero {
-      background: url('banner.jpg') center/cover no-repeat;
-      height: 330px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      font-size: 34px;
-      font-weight: bold;
-      text-shadow: 0 0 10px rgba(0,0,0,0.7);
-      padding: 20px;
-    }
-    .section {
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      border-left: 4px solid gold;
-      transition: 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-    }
-    .contacto {
-      text-align: center;
-      padding: 30px;
-    }
-    .btn {
-      background: gold;
-      color: #000;
-      padding: 12px 20px;
-      font-size: 20px;
-      text-decoration: none;
-      border-radius: 10px;
-      transition: 0.3s;
-      border: none;
-    }
-    .btn:hover {
-      background: #ccaa00;
-    }
-    footer {
-      background: #000;
-      color: gold;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JL Servicios Integrales</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <meta name="description" content="JL Servicios Integrales: mantenimiento residencial profesional en Querétaro. Electricidad, plomería, pintura, reparaciones y más." />
 </head>
+
 <body>
-  <header>JL SERVICIOS INTEGRALES</header>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">JL Servicios Integrales</div>
+        <div class="menu">
+            <a href="#electricidad" class="nav-btn">Electricidad</a>
+            <a href="#plomeria" class="nav-btn">Plomería</a>
+            <a href="#pintura" class="nav-btn">Pintura</a>
+            <a href="#reparaciones" class="nav-btn">Reparaciones</a>
+            <a href="#contacto" class="nav-btn">Contacto</a>
+            <a href="https://wa.me/524612321212" target="_blank" class="nav-btn nav-wsp">WhatsApp</a>
+        </div>
+    </nav>
 
-  <nav>
-    <a href="#servicios">Servicios</a>
-    <a href="#contacto">Contacto</a>
-    <a href="https://wa.me/524421234567" target="_blank">WhatsApp</a>
-  </nav>
+    <!-- HERO PRINCIPAL -->
+    <header class="hero">
+        <h1 class="title">Soluciones Profesionales para Tu Hogar</h1>
+        <p class="subtitle">Mantenimiento residencial y servicios integrales en Querétaro</p>
+        <div class="hero-buttons">
+            <a href="#servicios" class="btn-cta">Ver Servicios</a>
+            <a href="https://wa.me/524612321212" target="_blank" class="btn-cta-whatsapp">Contactar por WhatsApp</a>
+        </div>
+    </header>
 
-  <div class="hero">Soluciones Profesionales en Mantenimiento Residencial</div>
+    <!-- SECCIÓN GENERAL DE SERVICIOS -->
+    <section class="services" id="servicios">
+        <h2>Servicios Principales</h2>
+        <p class="section-desc">Selecciona un servicio para ver información detallada</p>
 
-  <section id="servicios" class="section">
-    <h2 style="text-align:center; font-size:30px; color:#222;">Nuestros Servicios</h2>
-    <div class="services-grid">
-      <div class="card">🔧 Mantenimiento general del hogar</div>
-      <div class="card">💡 Electricidad básica y reparaciones</div>
-      <div class="card">🚰 Plomería ligera y correcciones</div>
-      <div class="card">🧹 Limpieza profunda y detallada</div>
-      <div class="card">🛠️ Reparaciones menores variadas</div>
-    </div>
-  </section>
+        <div class="cards">
+            <a href="#electricidad" class="card">
+                <h3>🔌 Electricidad</h3>
+                <p>Instalaciones, reparaciones y mantenimiento eléctrico profesional.</p>
+            </a>
 
-  <section id="contacto" class="contacto">
-    <h2>Contacto</h2>
-    <p>¿Necesitas una cotización o más información?</p>
-    <a class="btn" href="https://wa.me/524421234567" target="_blank">Enviar mensaje por WhatsApp</a>
-  </section>
+            <a href="#plomeria" class="card">
+                <h3>🚰 Plomería</h3>
+                <p>Fugas, reparaciones e instalaciones hidráulicas.</p>
+            </a>
 
-  <footer>
-    © 2025 JL Servicios Integrales — Mantenimiento Profesional
-  </footer>
+            <a href="#pintura" class="card">
+                <h3>🎨 Pintura</h3>
+                <p>Acabados finos, interiores y exteriores.</p>
+            </a>
+
+            <a href="#reparaciones" class="card">
+                <h3>🛠 Reparaciones Generales</h3>
+                <p>Soluciones rápidas y confiables para tu hogar.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCIONES INDIVIDUALES DETALLADAS -->
+
+    <section class="service-section" id="electricidad">
+        <h2>Servicio de Electricidad</h2>
+        <p>Ofrecemos mantenimiento eléctrico, instalación de contactos, cambio de breakers, diagnóstico de fallas, cableado nuevo y más.</p>
+        <a href="https://wa.me/524612321212" class="btn-service">Solicitar Servicio</a>
+    </section>
+
+    <section class="service-section" id="plomeria">
+        <h2>Servicio de Plomería</h2>
+        <p>Atendemos fugas, cambio de tuberías, instalación de lavabos, sanitarios, llave mezcladora, diagnóstico y reparación de presión de agua.</p>
+        <a href="https://wa.me/524612321212" class="btn-service">Solicitar Servicio</a>
+    </section>
+
+    <section class="service-section" id="pintura">
+        <h2>Servicio de Pintura</h2>
+        <p>Aplicación de pintura interior y exterior, resanes, acabados finos y asesoría en colores.</p>
+        <a href="https://wa.me/524612321212" class="btn-service">Solicitar Servicio</a>
+    </section>
+
+    <section class="service-section" id="reparaciones">
+        <h2>Reparaciones Generales</h2>
+        <p>Desde cambios de chapas, ajustes de puertas, mantenimiento en general y soluciones prácticas para el hogar.</p>
+        <a href="https://wa.me/524612321212" class="btn-service">Solicitar Servicio</a>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+        <h2>Contacto</h2>
+        <p>📞 Teléfono: <b>461 232 1212</b></p>
+        <p>📧 Correo: <b>contacto@jlservicios.com</b></p>
+        <a href="https://wa.me/524612321212" target="_blank" class="btn-contact">Enviar mensaje por WhatsApp</a>
+    </section>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a href="https://wa.me/524612321212" class="whatsapp-btn" target="_blank">💬</a>
+
 </body>
 </html>
