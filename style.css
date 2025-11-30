@@ -1,22 +1,121 @@
+/* Estilo general */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: #fff;
+    background: #0a0a0a;
+    font-family: "Arial", sans-serif;
+    color: white;
+    overflow-x: hidden;
 }
 
+/* Hero Section */
 .hero {
     text-align: center;
-    padding: 80px 20px;
-    background: #000;
-    color: gold;
+    padding: 120px 20px;
+    background: linear-gradient(180deg, #000, #1a1a1a);
 }
 
-.services, .contact {
-    padding: 40px 20px;
+.title {
+    color: gold;
+    font-size: 42px;
+    margin: 0;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.subtitle {
+    margin-top: 10px;
+    color: #ccc;
+    font-size: 18px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Botón principal */
+.btn-cta {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: gold;
+    color: #000;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-cta:hover {
+    transform: scale(1.1);
+    background: #ffdf00;
+}
+
+/* Servicios */
+.services {
     text-align: center;
+    padding: 60px 20px;
 }
 
-h2 {
+.services h2 {
     color: gold;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #111;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: gold;
+    transform: translateY(-8px);
+}
+
+/* Contacto */
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+    background: #111;
+}
+
+.contact h2 {
+    font-size: 28px;
+    color: gold;
+}
+
+/* Botón flotante WhatsApp */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.15);
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
