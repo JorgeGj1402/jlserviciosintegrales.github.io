@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JL Servicios Integrales</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #000;
+        color: #fff;
+    }
+
+    header {
+        background: #000;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid #CDA434;
+    }
+
+    header h1 {
+        color: #CDA434;
+        margin: 0;
+        font-size: 28px;
+    }
+
+    .hero {
+        padding: 80px 20px;
+        text-align: center;
+        background: url('https://images.unsplash.com/photo-1581092334564-2f89b35eab44?auto=format&fit=crop&w=1400&q=60') center/cover no-repeat;
+        position: relative;
+    }
+    .hero::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.65);
+    }
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+    .hero h2 {
+        font-size: 36px;
+        color: #CDA434;
+    }
+    .hero p {
+        font-size: 18px;
+    }
+
+    .btn {
+        background: #CDA434;
+        color: #000;
+        padding: 12px 25px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .section {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    h3 {
+        color: #CDA434;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .services-box {
+        max-width: 900px;
+        margin: auto;
+        text-align: left;
+    }
+
+    .service-item {
+        margin-bottom: 15px;
+        border-left: 4px solid #CDA434;
+        padding-left: 10px;
+    }
+
+    footer {
+        background: #111;
+        padding: 20px;
+        text-align: center;
+        color: #bbb;
+        border-top: 1px solid #CDA434;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>JL Servicios Integrales</h1>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Soluciones Profesionales en Mantenimiento Residencial</h2>
+        <p>Atención rápida, calidad garantizada y la mejor experiencia para tu hogar.</p>
+        <a class="btn" href="https://wa.me/52XXXXXXXXXX">Solicitar Cotización</a>
+    </div>
+</section>
+
+<section class="section">
+    <h3>Servicios</h3>
+    <div class="services-box">
+        <div class="service-item"><strong>Mantenimiento Eléctrico:</strong> Reparaciones, instalaciones, iluminación LED.</div>
+        <div class="service-item"><strong>Plomería:</strong> Fugas, destapes, sanitarios, mezcladoras.</div>
+        <div class="service-item"><strong>Pintura y Acabados:</strong> Interiores, exteriores, retoques.</div>
+        <div class="service-item"><strong>Carpintería y Herrería:</strong> Puertas, muebles, soportes.</div>
+        <div class="service-item"><strong>Instalaciones:</strong> TV, ventiladores, calentadores.</div>
+        <div class="service-item"><strong>Mantenimiento Preventivo:</strong> Revisión y optimización.</div>
+    </div>
+</section>
+
+<section class="section">
+    <h3>Nosotros</h3>
+    <p>Somos un equipo especializado en mantenimiento residencial y servicios generales. Trabajamos con compromiso, calidad y profesionalismo.</p>
+</section>
+
+<section class="section">
+    <h3>Contacto</h3>
+    <p>WhatsApp: <strong>52XXXXXXXXXX</strong></p>
+    <p>Correo: <strong>tucorreo@correo.com</strong></p>
+    <p>Ubicación: Querétaro, Qro.</p>
+</section>
+
+<footer>
+    © 2025 JL Servicios Integrales – Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
