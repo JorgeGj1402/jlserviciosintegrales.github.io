@@ -3,41 +3,139 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Servicio de Electricidad | JL Servicios Integrales</title>
+<title>Electricidad Profesional en Querétaro | JL Servicios Integrales</title>
 
 <link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.ico">
+<link rel="icon" href="favicon.ico"> 
+
+<style>
+/* ESTILO ESTILO CONECTABEE ADAPTADO (negro/dorado) */
+.header-service {
+    height: 45vh;
+    background: linear-gradient(180deg,rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+                url('img/electricidad-banner.jpg') center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+}
+.header-service h1{
+    color:#d4af37;
+    font-size:38px;
+}
+.header-service p{
+    color:#eaeaea;
+    margin-top:10px;
+}
+
+/* SECCIÓN CONTENIDO */
+.service-container{
+    max-width:1100px;
+    margin:30px auto;
+    padding:20px;
+}
+.service-container h2{
+    color:#d4af37;
+    margin-bottom:12px;
+}
+.service-list li{
+    margin-bottom:10px;
+    color:#ddd;
+    font-size:17px;
+}
+
+/* BENEFICIOS */
+.benefits{
+    margin-top:40px;
+}
+.benefits h3{
+    color:#d4af37;
+    margin-bottom:10px;
+}
+.benefits ul li{
+    margin-bottom:8px;
+    color:#ccc;
+}
+
+/* FAQ */
+.faq{
+    margin-top:40px;
+}
+.faq h3{
+    color:#d4af37;
+    margin-bottom:10px;
+}
+.faq-item{
+    background:#111;
+    padding:14px;
+    margin-bottom:10px;
+    border-left:3px solid #d4af37;
+    border-radius:8px; 
+}
+
+.btn-wsp-large{
+    display:inline-block;
+    padding:14px 20px;
+    background:#25d366;
+    color:#000;
+    font-weight:bold;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+/* botón flotante */
+.whatsapp-btn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25d366;
+    padding:14px 18px;
+    border-radius:50%;
+    font-size:24px;
+    color:#000;
+}
+</style>
 
 </head>
 <body>
 
+<!-- NAV -->
 <nav class="navbar">
     <a href="index.html" class="nav-btn">Inicio</a>
     <a href="plomeria.html" class="nav-btn">Plomería</a>
     <a href="pintura.html" class="nav-btn">Pintura</a>
     <a href="reparaciones.html" class="nav-btn">Reparaciones</a>
-    <a href="https://wa.me/524612321212" target="_blank" class="nav-btn">WhatsApp</a>
+    <a href="https://wa.me/524612321212" class="nav-btn" target="_blank">WhatsApp</a>
 </nav>
 
-<header class="hero small">
-    <h1 class="title">Servicio de Electricidad</h1>
-    <p class="subtitle">Instalaciones, mantenimiento y reparaciones eléctricas profesionales</p>
+<!-- ENCABEZADO -->
+<header class="header-service">
+    <div>
+        <h1>Servicio de Electricidad</h1>
+        <p>Instalaciones, mantenimiento y reparaciones eléctricas profesionales en Querétaro.</p>
+    </div>
 </header>
 
-<section class="content">
-    <h2>¿Qué ofrecemos?</h2>
-    <ul>
-        <li>Instalación de contactos, apagadores y lámparas</li>
-        <li>Reparación de cortos y fallas eléctricas</li>
-        <li>Mantenimiento preventivo y correctivo</li>
-        <li>Instalación de líneas nuevas y centros de carga</li>
-        <li>Diagnóstico completo de instalaciones</li>
+<!-- CONTENIDO -->
+<section class="service-container">
+
+    <h2>Servicios que ofrecemos</h2>
+    <ul class="service-list">
+        <li>✔ Instalación de lámparas, contactos y apagadores</li>
+        <li>✔ Reparación de cortos y fallas eléctricas</li>
+        <li>✔ Instalación de líneas nuevas y centros de carga</li>
+        <li>✔ Mantenimiento preventivo y correctivo</li>
+        <li>✔ Diagnóstico completo de instalaciones</li>
     </ul>
 
-    <a href="https://wa.me/524612321212" class="btn-cta-whatsapp">Solicitar servicio por WhatsApp</a>
-</section>
+    <a href="https://wa.me/524612321212" class="btn-wsp-large" target="_blank">
+        Solicitar servicio por WhatsApp
+    </a>
 
-<a href="https://wa.me/524612321212" class="whatsapp-btn" target="_blank">💬</a>
-
-</body>
-</html>
+    <div class="benefits">
+        <h3>¿Por qué elegirnos?</h3>
+        <ul>
+            <li>⚡ Técnicos capacitados y con experiencia.</li>
+            <li>⚡ Llegada rápida a tu domicilio.</li>
+            <li>⚡ Seguridad y calidad
