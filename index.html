@@ -1,78 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JL Servicios Integrales</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        header {
-            background-color: #000;
-            color: #FFD700;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-        }
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 40px 20px;
-        }
-        .service-btn {
-            background-color: #FFD700;
-            color: #000;
-            border: none;
-            border-radius: 15px;
-            padding: 25px 40px;
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-align: center;
-            width: 220px;
-        }
-        .service-btn:hover {
-            background-color: #e6c200;
-            transform: translateY(-5px);
-        }
-        footer {
-            background-color: #000;
-            color: #FFD700;
-            text-align: center;
-            padding: 15px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <meta name="description" content="JL Servicios Integrales: mantenimiento residencial profesional en Querétaro. Electricidad, plomería, pintura, reparaciones y más." />
 </head>
-<body>
 
-    <header>
-        <h1>JL Servicios Integrales</h1>
-        <p>Mantenimiento residencial y más</p>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">JL Servicios Integrales</div>
+        <div class="menu">
+            <a href="#electricidad" class="nav-btn">Electricidad</a>
+            <a href="#plomeria" class="nav-btn">Plomería</a>
+            <a href="#pintura" class="nav-btn">Pintura</a>
+            <a href="#reparaciones" class="nav-btn">Reparaciones</a>
+            <a href="#galeria" class="nav-btn">Galería</a>
+            <a href="#testimonios" class="nav-btn">Testimonios</a>
+            <a href="#contacto" class="nav-btn">Contacto</a>
+            <a href="https://wa.me/524612321212" target="_blank" class="nav-btn nav-wsp">WhatsApp</a>
+        </div>
+    </nav>
+
+    <!-- HERO PRINCIPAL -->
+    <header class="hero">
+        <h1 class="title animate-fade">Soluciones Profesionales para Tu Hogar</h1>
+        <p class="subtitle animate-fade">Mantenimiento residencial y servicios integrales en Querétaro</p>
+        <div class="hero-buttons animate-fade">
+            <a href="#servicios" class="btn-cta">Ver Servicios</a>
+            <a href="https://wa.me/524612321212" target="_blank" class="btn-cta-whatsapp">WhatsApp</a>
+        </div>
     </header>
 
-    <section class="services">
-        <button class="service-btn" onclick="location.href='mantenimiento.html'">Mantenimiento Residencial</button>
-        <button class="service-btn" onclick="location.href='electricidad.html'">Electricidad</button>
-        <button class="service-btn" onclick="location.href='plomeria.html'">Plomería</button>
-        <button class="service-btn" onclick="location.href='pintura.html'">Pintura</button>
-        <button class="service-btn" onclick="location.href='otros.html'">Otros Servicios</button>
+    <!-- POR QUÉ ELEGIRNOS -->
+    <section class="why-us" id="porque">
+        <h2>¿Por qué elegir JL Servicios Integrales?</h2>
+        <div class="why-cards">
+            <div class="why-card">
+                <h3>✔ Profesionalismo</h3>
+                <p>Técnicos capacitados para resolver cualquier problema de tu hogar.</p>
+            </div>
+            <div class="why-card">
+                <h3>✔ Atención Rápida</h3>
+                <p>Respondemos el mismo día a la mayoría de los servicios.</p>
+            </div>
+            <div class="why-card">
+                <h3>✔ Precios Claros</h3>
+                <p>Sin sorpresas ni cargos ocultos. Cotización antes de comenzar.</p>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        &copy; 2025 JL Servicios Integrales | Contacto: 55-XXXX-XXXX
+    <!-- SERVICIOS GENERALES -->
+    <section class="services" id="servicios">
+        <h2>Servicios Principales</h2>
+        <p class="section-desc">Selecciona un servicio para ver detalles</p>
+
+        <div class="cards">
+            <a href="#electricidad" class="card animate-slide">
+                <h3>🔌 Electricidad</h3>
+                <p>Instalaciones y mantenimientos eléctricos.</p>
+            </a>
+
+            <a href="#plomeria" class="card animate-slide">
+                <h3>🚰 Plomería</h3>
+                <p>Fugas, tuberías y reparaciones hidráulicas.</p>
+            </a>
+
+            <a href="#pintura" class="card animate-slide">
+                <h3>🎨 Pintura</h3>
+                <p>Acabados profesionales para interior y exterior.</p>
+            </a>
+
+            <a href="#reparaciones" class="card animate-slide">
+                <h3>🛠 Reparaciones</h3>
+                <p>Soluciones para todo tipo de desperfectos.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- SERVICIO DETALLADO: ELECTRICIDAD -->
+    <section class="service-section" id="electricidad">
+        <h2>Servicio de Electricidad</h2>
+        <p>Instalaciones, cambios de breakers, fallas eléctricas, cableado, iluminación LED, contactos, cortos, variaciones de voltaje y más.</p>
+        <a href="https://wa.me/524612321212" class="btn-service">Solicitar Servicio</a>
+    </section>
+
+    <!-- SERVICIO DETALLADO: PLOMERÍA -->
+    <section class="service-section" id="plomeria">
+        <h2>Servicio de Plomería</h2>
+        <p>Fugas, instalación de lavabos y sanitarios, cambio de tuberías, reparación de presión de agua, calentadores y más.</p>
+        <a href="https://wa.me/524612321212" class="btn-service">Solicitar Servicio</a>
+    </section>
+
+    <!-- SERVICIO DETALLADO: PINTURA -->
+    <section class="service-section" id="pintura">
+        <h2>Servicio de Pintura</h2>
+        <p>Pintura profesional, resanes, impermeabilización, acabados decorativos y asesoría en colores.</p>
+        <a href="https://wa.me/524612321212" class="btn-service">Solicitar Servicio</a>
+    </section>
+
+    <!-- SERVICIO DETALLADO: REPARACIONES -->
+    <section class="service-section" id="reparaciones">
+        <h2>Reparaciones Generales</h2>
+        <p>Chapas, puertas, muebles, instalaciones varias, ajustes y soluciones para tu hogar.</p>
+        <a href="https://wa.me/524612321212" class="btn-service">Solicitar Servicio</a>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="gallery" id="galeria">
+        <h2>Galería de Trabajos</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonials" id="testimonios">
+        <h2>Testimonios de Clientes</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <p>“Muy profesionales, solucionaron un problema eléctrico en minutos.”</p>
+                <h4>- Carlos M.</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>“Servicio rápido y confiable, totalmente recomendado.”</p>
+                <h4>- Fernanda L.</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>“Excelente trabajo de plomería, quedó como nuevo.”</p>
+                <h4>- Jorge R.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+        <h2>Contacto</h2>
+        <p>📞 Teléfono: <b>461 232 1212</b></p>
+        <p>📧 Correo: <b>contacto@jlservicios.com</b></p>
+        <a href="https://wa.me/524612321212" target="_blank" class="btn-contact">Enviar mensaje por WhatsApp</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 JL Servicios Integrales · Todos los derechos reservados</p>
     </footer>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a href="https://wa.me/524612321212" class="whatsapp-btn" target="_blank">💬</a>
 
 </body>
 </html>
